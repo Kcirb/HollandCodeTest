@@ -4,9 +4,11 @@
         <meta charset="UTF-8"></meta>
         <link href="../styles/resultStyles.css" rel="stylesheet" type="text/css" />
         <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-        <script type="module" src="writeInterestCode.js"></script>
-        <script type="module" src="makeRadarChart.js"></script>
-        <script type="module" src="writeFittingJobs.js"></script>
+        <script type="module" src="./result_func/makeRadarChart.js"></script>
+        <script type="module" src="./result_func/writeInterestCode.js"></script>
+        <script type="module" src="./result_func/writeLowestCode.js"></script>
+        <script type="module" src="./result_func/writeFittingJobs.js"></script>
+        <script type="module" src="./result_func/writeUserSelection.js"></script>
         <script>
             if(!window.location.href.includes('?')) location.href = "../page1/index_p1.html";
         </script>
@@ -21,12 +23,15 @@
                 <div id="radar_chart_container">
                     <canvas id="radarChartCanvas"></canvas>
                 </div>
-                <div  id="theme_code_top3">
-                    <div class="title_block">
-                        <img class="title_icon" src="../images/Top3.svg"/>
-                        <h3>您前三高分的主題及代碼</h3>
-                    </div> 
+                <div id="userSelection">
+                    <ul id="userSelectList">您選擇了以下職業：</ul>
                 </div>
+            </div>
+            <div class="result_block" id="theme_code_top3">
+                <div class="title_block">
+                    <img class="title_icon" src="../images/Top3.svg"/>
+                    <h3>您前三高分的主題及代碼</h3>
+                </div> 
             </div>
             <div class="result_block" id="top10_jobs">
                 <div class="title_block">
