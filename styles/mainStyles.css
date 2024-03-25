@@ -31,7 +31,7 @@ body{
     }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 360px) {
     .checkboxShell{
         width: 48%;
         padding: 2px;
