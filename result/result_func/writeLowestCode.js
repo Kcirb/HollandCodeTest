@@ -29,7 +29,6 @@ import getUserResult from "./getUserResult.js";
     leastInterest.innerHTML = lowestCode + `（${lowestCodeDescr.Theme}）`;
 
     // 呈現此代碼描述
-    console.log(lowestCodeDescr.lowScoreSuggest);
     let dt = document.createElement('dt');
     dt.innerHTML = lowestCodeDescr.lowScoreSuggest;
     leastInterest.appendChild(dt);

@@ -9,18 +9,20 @@
         <script type="module" src="./result_func/writeLowestCode.js"></script>
         <script type="module" src="./result_func/writeFittingJobs.js"></script>
         <script type="module" src="./result_func/writeUserSelection.js"></script>
+        <script type="module" src="./result_func/writeDetailDescr.js"></script>
         <script>
             if(!window.location.href.includes('?')) location.href = "../page1/index_p1.html";
         </script>
         <title>何倫碼測驗結果 – Meetype</title>
     </head>
     <body>
-        <div class="title_block" style="display: block;">
+        <div class="titleBlock" style="display: block;">
             <h1 style="text-align: center;">您的職業興趣（何倫碼）測驗結果</h1>
         </div>
         <div id="content">
-            <div class="result_block" id="score_block">
-                <div id="radar_chart_container">
+            <div class="result_block" id="scoreBlock">
+                <div id="radarChartContainer">
+                    <img id="meetypeIcon" src="../images/Meetype.svg"/>
                     <canvas id="radarChartCanvas"></canvas>
                 </div>
                 <div id="userSelection">
@@ -28,26 +30,32 @@
                 </div>
             </div>
             <div class="result_block" id="theme_code_top3">
-                <div class="title_block">
-                    <img class="title_icon" src="../images/Top3.svg"/>
+                <div class="titleBlock">
+                    <img class="titleIcon" src="../images/Top3.svg"/>
                     <h3>您前三高分的主題及代碼</h3>
                 </div> 
             </div>
+            <div class="result_block" id="detail_description">
+                <div class="titleBlock">
+                    <img class="titleIcon" src="../images/Top3.svg"/>
+                    <h3>詳細人格說明</h3>
+                </div> 
+            </div>
             <div class="result_block" id="top10_jobs">
-                <div class="title_block">
-                    <img class="title_icon" src="../images/Highest.svg"/>
+                <div class="titleBlock">
+                    <img class="titleIcon" src="../images/Highest.svg"/>
                     <h3>最符合您興趣的職業Top10</h3>
                 </div>
             </div>
             <div class="result_block" id="theme_code_last">
-                <div class="title_block">
-                    <img class="title_icon" src="../images/Lowest.svg" />
+                <div class="titleBlock">
+                    <img class="titleIcon" src="../images/Lowest.svg" />
                     <h3>您最低分的主題及相關職業</h3>
                 </div>
             </div>
             <div id="read_more_block" >
-                <div class="title_block">
-                    <img class="title_icon" src="../images/More.svg" />
+                <div class="titleBlock">
+                    <img class="titleIcon" src="../images/More.svg" />
                     <h3>延伸閱讀</h3>
                 </div>
                 <h4>相關影片</h4>

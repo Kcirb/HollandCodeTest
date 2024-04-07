@@ -4,17 +4,17 @@ body{
 }
 
 /* 標題 */
-.title_block{
+.titleBlock{
     display: flex;
     background-color: #D0E5E8;
 }
 
-.title_icon{
+.titleIcon{
     margin: 0 2rem 0 1rem;
     width: 3rem;
 }
 
-.result_block{
+.resultBlock{
     border-bottom: 2px solid gray;
 }
 
@@ -30,15 +30,23 @@ body{
     width: 3rem;
 }
 
-#score_block {
+#meetypeIcon{
+    position: absolute;
+    height: 1rem;
+    bottom:0;
+    right:0;
+}
+
+#scoreBlock {
     display: flex;
 }
-#radar_chart_container {
+#radarChartContainer {
     margin: 10px auto;
     width: 400px;
     height: 300px;
     border: 2px solid gray;
     background-color: white;
+    position: relative;
 }
 
 #userSelection{
@@ -46,11 +54,11 @@ body{
 }
 
 @media (max-width: 361px) {
-    #score_block{
+    #scoreBlock{
         display: block;
     }
 
-    #radar_chart_container {
+    #radarChartContainer {
         margin: auto;
         width: 100%;
     }
