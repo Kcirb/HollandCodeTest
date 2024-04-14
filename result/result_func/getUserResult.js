@@ -45,14 +45,16 @@ function getInterestCode(userScore){
     let userCodes = [];
     let codes = ['R','I','A','S','E','C'];
 
+    let cur = Math.max(score);
+
     for(let i = 0; i < userScore.length; i++){
         // 當前的值是score裡的最大值。
         let cur = Math.max(...score);
         // 如果codes中已經有當前分數，代表有重複，因此向下尋找。
-        if (userCodes.includes(codes[userScore.indexOf(cur)])){
-            userCodes.push(codes[userScore.indexOf(cur, userScore.indexOf(cur)+1)]);
-        }else userCodes.push(codes[userScore.indexOf(cur)]);
-        score.splice(score.indexOf(cur),1);
+        if (userCodes.includes(codes[score.indexOf(cur)])){
+            userCodes.push(codes[score.indexOf(cur, score.indexOf(cur)+1)]);
+        }else userCodes.push(codes[score.indexOf(cur)]);
+        score[score.indexOf(cur)] = 0;
     }
 
     return userCodes;
