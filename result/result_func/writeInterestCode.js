@@ -48,8 +48,6 @@ import getUserResult from "./getUserResult.js";
         let dlAdvantage = document.createElement('dl');
         descrTextDiv.appendChild(dlAdvantage);
         dlAdvantage.innerHTML = codeDescription.Advantage;
-
-        descrTextDiv.appendChild(document.createElement('br'));
     }
 
 })();

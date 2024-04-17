@@ -1,12 +1,6 @@
-body{
-    width: 90%;
-    margin: auto;
-}
-
-/* 標題 */
-.titleBlock{
+.titleBar{
     display: flex;
-    background-color: #D0E5E8;
+    background-color: #F8AB87;
 }
 
 .titleIcon{
@@ -21,8 +15,9 @@ body{
 .code_descr_block{
     display: flex;
     margin: 1rem;
-    border: 2px solid gray;
-    background-color: rgb(128, 128, 128, 0.3);
+    background-image: url(../images/Block.svg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 
 .code_descr_icon{
@@ -64,17 +59,5 @@ body{
     }
     #userSelection{
         width: 100%;
-    }
-}
-
-@media (min-width: 961px) {
-    body{
-        width: 80%;
-        max-width: 1024px;
-        margin: auto;
-    }
-
-    #theme_code {
-        width: calc(100% - 400px);
     }
 }

@@ -1,6 +1,8 @@
 import getUserResult from "./getUserResult.js";
+import writeLowestCode from "./writeLowestCode.js";
 
 (async () => {
+    await writeLowestCode();
     let userResult = await getUserResult();
     let response = await fetch('../data/occupations.json');
     let jobs = await response.json();
@@ -21,7 +23,7 @@ import getUserResult from "./getUserResult.js";
 
     let last10_jobs_list = document.createElement('ol');
     last10_jobs_list.id = 'last10_jobs_list';
-    document.getElementById("theme_code_last").appendChild(last10_jobs_list);
+    document.getElementById("low_interest_code").after(last10_jobs_list);
     
     for (let i = 0; i < last10_jobs.length; i ++){
         let li = document.createElement('li');

@@ -2,21 +2,22 @@
 <html>
     <head>
         <meta charset="UTF-8"></meta>
+        <script>
+            if(!window.location.href.includes('?')) location.href = "../page1/index_p1.html";
+        </script>
         <link href="../styles/resultStyles.css" rel="stylesheet" type="text/css" />
+        <link href="../styles/commonStyle.css" rel="stylesheet" type="text/css" />
         <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
         <script type="module" src="./result_func/makeRadarChart.js"></script>
         <script type="module" src="./result_func/writeInterestCode.js"></script>
         <script type="module" src="./result_func/writeLowestCode.js"></script>
-        <script type="module" src="./result_func/writeFittingJobs.js"></script>
         <script type="module" src="./result_func/writeUserSelection.js"></script>
         <script type="module" src="./result_func/writeDetailDescr.js"></script>
-        <script>
-            if(!window.location.href.includes('?')) location.href = "../page1/index_p1.html";
-        </script>
+        <script type="module" src="./result_func/writeFittingJobs.js"></script>
         <title>何倫碼測驗結果 – Meetype</title>
     </head>
     <body>
-        <div class="titleBlock" style="display: block;">
+        <div class="titleBar" style="display: block;">
             <h1 style="text-align: center;">您的職業興趣（何倫碼）測驗結果</h1>
         </div>
         <div id="content">
@@ -33,31 +34,31 @@
                 <p>若你在六種類型的分數差別很大，有一兩項特別高，其他都很低，表示你有明顯的興趣，區辨度高，會比較容易選出自己喜歡的職業。<br>但如果好幾個類型的喜歡程度都差不多，那表示「區辨度低」，喜好不明確，會在選擇職業的初期比較沒有方向。</p>
             </div>
             <div class="result_block" id="theme_code_top3">
-                <div class="titleBlock">
+                <div class="titleBar">
                     <img class="titleIcon" src="../images/Top3.svg"/>
                     <h3>您前三高分的主題及代碼</h3>
                 </div> 
             </div>
             <div class="result_block" id="detail_description">
-                <div class="titleBlock">
-                    <img class="titleIcon" src="../images/Top3.svg"/>
+                <div class="titleBar">
+                    <img class="titleIcon" src="../images/Info.svg"/>
                     <h3>詳細人格說明</h3>
                 </div> 
             </div>
             <div class="result_block" id="top10_jobs">
-                <div class="titleBlock">
+                <div class="titleBar">
                     <img class="titleIcon" src="../images/Highest.svg"/>
                     <h3>最符合您興趣的職業Top10</h3>
                 </div>
             </div>
             <div class="result_block" id="theme_code_last">
-                <div class="titleBlock">
+                <div class="titleBar">
                     <img class="titleIcon" src="../images/Lowest.svg" />
                     <h3>您最低分的主題及相關職業</h3>
                 </div>
             </div>
             <div id="read_more_block" >
-                <div class="titleBlock">
+                <div class="titleBar">
                     <img class="titleIcon" src="../images/More.svg" />
                     <h3>延伸閱讀</h3>
                 </div>

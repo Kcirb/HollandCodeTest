@@ -1,6 +1,6 @@
 import getUserResult from "./getUserResult.js";
 
-(async () => {
+async function writeLowestCode() {
     let userResult = await getUserResult();
     let descriptions = await fetch('../data/descriptions.json');
     descriptions = await descriptions.json();
@@ -11,6 +11,7 @@ import getUserResult from "./getUserResult.js";
 
     let div = document.createElement('div');
     div.className = "code_descr_block";
+    div.id = "low_interest_code";
     
     let codeIcon = document.createElement('img');
     codeIcon.className = "code_descr_icon";
@@ -18,7 +19,6 @@ import getUserResult from "./getUserResult.js";
     
     div.appendChild(codeIcon);
 
-    
     let leastInterest = document.createElement('dt');
     document.getElementById('theme_code_last')
     .appendChild(div)
@@ -32,4 +32,6 @@ import getUserResult from "./getUserResult.js";
     let dt = document.createElement('dt');
     dt.innerHTML = lowestCodeDescr.lowScoreSuggest;
     leastInterest.appendChild(dt);
-})();
+}
+
+export default writeLowestCode;

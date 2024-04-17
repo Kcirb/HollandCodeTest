@@ -1,0 +1,20 @@
+body{
+    width: 90%;
+    margin: auto;
+    background:
+    url(../images/TopBackground.png) no-repeat top/100%,
+    url(../images/BottomBackground.png) no-repeat bottom/100%,
+    #D5E6ED;
+}
+
+@media (min-width: 961px) {
+    body{
+        width: 80%;
+        max-width: 1024px;
+        margin: auto;
+    }
+
+    #theme_code {
+        width: calc(100% - 400px);
+    }
+}
