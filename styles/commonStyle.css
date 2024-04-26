@@ -7,14 +7,10 @@ body{
     #D5E6ED;
 }
 
-@media (min-width: 961px) {
-    body{
-        width: 80%;
-        max-width: 1024px;
-        margin: auto;
-    }
+h1{
+    font-size: 1.5rem;
+}
 
-    #theme_code {
-        width: calc(100% - 400px);
-    }
+p{
+    padding: 0 1rem ;
 }

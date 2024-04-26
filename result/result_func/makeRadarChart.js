@@ -16,17 +16,30 @@ import getUserResult from "./getUserResult.js";
         pointBorderColor: "#fff",
         pointHoverBackgroundColor: "#fff",
     }],
-  };
+  }
 
   let options = {
     maintainAspectRatio: false,
     scale: {
-      ticks: {
-        stepSize: 3,
-      },
+    },
+    scales: {
       r: {
+        ticks: {
+          // showLabelBackdrop: false,
+          // z: 1,
+          // stepSize: 3,
+          // color: 'black',
+          // align: 'near',
+          display: false
+        },  
+        startAngle: 30,
         max: 18,
-        min: 0,
+        pointLabels: {
+          color: 'black',
+          font: {
+            size: 14
+          }
+        }
       }
     }
   }
