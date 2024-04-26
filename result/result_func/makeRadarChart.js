@@ -8,7 +8,7 @@ import getUserResult from "./getUserResult.js";
   let radarChartData = {
     labels: ['R（實用型）', 'I（研究型）', 'A（藝術型）', 'S（社會型）', 'E（企業型）', 'C（規律型）'],
     datasets: [{
-        label: '您的各向度分數',
+        label: '您的各向度分數（滿分18分）',
         data: userResult.score,
         backgroundColor: 'rgba(248, 171, 135, 0.2)',
         borderColor: 'rgba(248, 171, 135, 1)',
