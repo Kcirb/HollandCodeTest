@@ -1,3 +1,15 @@
+## 2024.04.29
+- 測驗頁面改動：
+    - 新增"writeCheckbox.js"，統一處理兩個頁面的checkbox。
+        - 也需要更新"index_p1.html", "index_p2.html"
+    - 修改"wirte_p1_checkboxes.js"、"wirte_p2_checkboxes.js"，現在職業按照文字長度排列。
+- 結果頁面改動：
+    - 修改"getUserResult.js"，改善低分主題顯示錯誤的問題。
+
+## 2024.04.29
+- 結果頁面改動：
+    - 延伸閱讀欄位新增六個人格的推薦
+
 ## 2024.04.23
 - 結果頁面改動：
     - 大標題文字改為「您的測驗結果」。

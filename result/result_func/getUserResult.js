@@ -41,11 +41,10 @@ function isInURL(id, url) {
 }
 
 function getInterestCode(userScore){
+    // 建立一個新的array，避免影響原本的值
     let score = userScore.slice();
     let userCodes = [];
     let codes = ['R','I','A','S','E','C'];
-
-    let cur = Math.max(score);
 
     for(let i = 0; i < userScore.length; i++){
         // 當前的值是score裡的最大值。
@@ -54,7 +53,9 @@ function getInterestCode(userScore){
         if (userCodes.includes(codes[score.indexOf(cur)])){
             userCodes.push(codes[score.indexOf(cur, score.indexOf(cur)+1)]);
         }else userCodes.push(codes[score.indexOf(cur)]);
-        score[score.indexOf(cur)] = 0;
+        
+        // 將當前代碼的分數改為-1，不會再被選到。
+        score[score.indexOf(cur)] = -1;
     }
 
     return userCodes;
