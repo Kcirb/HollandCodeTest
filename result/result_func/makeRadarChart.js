@@ -25,15 +25,12 @@ import getUserResult from "./getUserResult.js";
     scales: {
       r: {
         ticks: {
-          // showLabelBackdrop: false,
-          // z: 1,
-          // stepSize: 3,
-          // color: 'black',
-          // align: 'near',
+          beginAtZero: true,
           display: false
         },  
         startAngle: 30,
         max: 18,
+        min: -0.01,
         pointLabels: {
           color: 'black',
           font: {
